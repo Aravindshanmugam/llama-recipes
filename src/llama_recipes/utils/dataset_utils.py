@@ -54,7 +54,7 @@ DATASET_PREPROC = {
     "alpaca_dataset": partial(get_alpaca_dataset),
     "grammar_dataset": get_grammar_dataset,
     "samsum_dataset": get_samsum_dataset,
-    "custom_dataset": get_custom_dataset,
+    "Appian_PostProcessed1.2_Split": get_custom_dataset,
     "llamaguard_toxicchat_dataset": get_llamaguard_toxicchat_dataset,
 
 }
