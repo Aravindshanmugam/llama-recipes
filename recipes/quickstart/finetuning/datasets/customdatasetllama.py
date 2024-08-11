@@ -90,7 +90,7 @@ def get_custom_dataset(dataset_config, tokenizer, split):
         for i, content in enumerate(thread):
             dialog.append({
                 "role": "user" if i % 2 == 0 else "assistant",
-                "content": content,
+                "content": content['content'],
             })
         return {"dialog": dialog}
 
