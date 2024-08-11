@@ -28,7 +28,7 @@ class alpaca_dataset:
 @dataclass
 class custom_dataset:
     dataset: str = "Appian_PostProcessed1.2_Split"
-    file: str = "recipes/quickstart/finetuning/datasets/customdatasetllama.py"
+    file: str = "/content/llama-recipes/recipes/quickstart/finetuning/datasets/customdatasetllama.py"
     train_split: str = "train"
     test_split: str = "validation"
     data_path: str = ""
