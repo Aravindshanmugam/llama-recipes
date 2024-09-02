@@ -94,7 +94,7 @@ def get_custom_dataset(dataset_config, tokenizer, split):
             })
         return {"dialog": dialog}
 
-    dataset = datasets.load_dataset("rvind2508/Appian_PostProcessed1.2_Split", split=split)
+    dataset = datasets.load_dataset("rvind2508/Datasetfromsolution_extracted_formated", split=split)
     dataset = dataset.map(lambda x: to_dialog(x["messages"]), remove_columns=list(dataset.features))
     dataset = dataset.map(lambda x: tokenize_dialog(x["dialog"], tokenizer), remove_columns=list(dataset.features))
 
